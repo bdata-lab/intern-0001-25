@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "id": "proj1",
+      "title": "DevFlow - Developer Workflow Platform",
+      "description": "A productivity tool for developers to manage tasks, write notes, and organize workflows using React, Node.js, and PostgreSQL.",
+      "techStack": ["React", "Node.js", "Express", "PostgreSQL", "TailwindCSS"],
+      "tags": ["Web App", "Task Management", "Productivity"],
+      "images": [
+        "/images/devflow/cover.png",
+        "/images/devflow/dashboard.png"
+      ],
+      "repoUrl": "https://github.com/moekyawsoe/devflow",
+      "liveUrl": "https://devflow.app",
+      "date": "2024-12-01",
+      "status": "live"
+    },
+    {
+      "id": "proj2",
+      "title": "SnapNotes - Note Taking App",
+      "description": "Offline-capable note taking PWA built with Next.js and MongoDB. Includes Markdown support, search, and tags.",
+      "techStack": ["Next.js", "MongoDB", "PWA", "Zustand"],
+      "tags": ["Notes", "Offline", "PWA"],
+      "images": ["/images/snapnotes/screenshot.png"],
+      "repoUrl": "https://github.com/moekyawsoe/snapnotes",
+      "liveUrl": "",
+      "date": "2024-07-15",
+      "status": "development"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod1",
+      "name": "PocketPOS",
+      "description": "A mobile-first Point of Sale system built in Flutter with support for printing, offline sync, and multi-store support. Backend in Node.js and MySQL.",
+      "techStack": ["Flutter", "Node.js", "MySQL", "Redis"],
+      "platforms": ["Android", "Web"],
+      "images": [
+        "/images/pocketpos/home.png",
+        "/images/pocketpos/sale.png"
+      ],
+      "storeUrl": "",
+      "demoUrl": "https://pocketpos-demo.vercel.app",
+      "date": "2025-02-22",
+      "status": "beta"
+    },
+    {
+      "id": "prod2",
+      "name": "InstaCache - Redis Admin Tool",
+      "description": "A lightweight Redis GUI admin tool for developers. Visualizes keys, TTL, and memory usage. Built with Electron + React.",
+      "techStack": ["React", "Electron", "Redis", "TailwindCSS"],
+      "platforms": ["Desktop"],
+      "images": ["/images/instacache/ui.png"],
+      "storeUrl": "",
+      "demoUrl": "",
+      "date": "2023-11-10",
+      "status": "live"
+    }
+  ]
+}
