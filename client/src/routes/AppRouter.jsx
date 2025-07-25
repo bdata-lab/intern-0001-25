@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate } from "react-router-dom";
-import Playground from "@/routes/Playground/index";
 import AppRoutes from "@/routes/routes";
+import Cars from "@/routes/Cars/index";
+import Books from "@/routes/Books/index";
+import Home from "@/routes/Home/index";
 
 const AppRouter = () => {
   const location = useLocation();
@@ -10,36 +12,26 @@ const AppRouter = () => {
     <Routes location={location}>
       {/* playground route */}
       <Route
-        path={AppRoutes.MAIN}
-        element={
-            <Playground />
-        }
+        path={AppRoutes.HOME}
+        element={<Home />}
+      />
+
+      <Route
+        path={AppRoutes.CARS}
+        element={<Cars />}
+      />
+
+      <Route
+        path={AppRoutes.BOOKS}
+        element={<Books />}
       />
 
     </Routes>
   );
 };
 
-const ErrorBoundary = ({ children }) => {
-  const [hasError, setHasError] = React.useState(false);
-
-  React.useEffect(() => {
-    const handleError = () => setHasError(true);
-    window.addEventListener("error", handleError);
-    return () => window.removeEventListener("error", handleError);
-  }, []);
-
-  if (hasError) {
-    return <div>Something went wrong.</div>;
-  }
-
-  return children;
-};
-
 export default () => (
   <Router>
-    <ErrorBoundary>
-      <AppRouter />
-    </ErrorBoundary>
+    <AppRouter />
   </Router>
 );

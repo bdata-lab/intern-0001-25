@@ -1,4 +1,6 @@
 export default {
-    MAIN: '/',
-    PLAYGROUND: '/playground'
+    HOME: '/',
+    PLAYGROUND: '/playground',
+    CARS: '/cars',
+    BOOKS: '/books'
 };
